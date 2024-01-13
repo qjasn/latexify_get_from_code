@@ -5,13 +5,14 @@ requires = [
 build-backend = "hatchling.build"
 
 [project]
-name = "latexify-py"
+name = "latexify-get-from-code"
 description = "Generates LaTeX math description from Python functions."
 readme = "README.md"
 requires-python = ">=3.7, <3.12"
 license = {text = "Apache Software License 2.0"}
 authors = [
-    {name = "Yusuke Oda", email = "odashi@inspiredco.ai"}
+    {name = "Yusuke Oda", email = "odashi@inspiredco.ai"},
+    {name = "Asahi Qin", email = "qjasnfinder@icloud.com"}
 ]
 keywords = [
     "equation",
@@ -58,8 +59,8 @@ mypy = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/google/latexify_py"
-"Bug Tracker" = "https://github.com/google/latexify_py/issues"
+Homepage = "https://github.com/qjasn/latexify_get_from_code"
+"Bug Tracker" = "https://github.com/qjasn/latexify_get_from_code/issue"
 
 [tool.hatch.build]
 include = [
