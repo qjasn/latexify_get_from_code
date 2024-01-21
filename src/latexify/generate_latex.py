@@ -118,8 +118,8 @@ def get_latex_with_code(
     code = """def {}({}):{}""".format(name, args, code)
     source = textwrap.dedent(code)
     tree = ast.parse(source)
-    #if not tree.body or not isinstance(tree.body[0], ast.FunctionDef):
-    #    raise exceptions.LatexifySyntaxError("Not a function.")
+    if not tree.body or not isinstance(tree.body[0], ast.FunctionDef):
+        raise exceptions.LatexifySyntaxError("Not a function.")
 
     # Mandatory AST Transformation.
     tree = transformers.AugAssignReplacer().visit(tree)
