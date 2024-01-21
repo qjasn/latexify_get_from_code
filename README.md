@@ -1,4 +1,25 @@
-# latexify
+# Fork说明
+
+此项目新增了一个函数，用来直接从代码文本生成latex，此外还将扩展出支持输入python表达式返回latex的功能
+
+例：
+``` python
+import latexify
+code = {
+   "name":"f",
+   "args":"x",
+   "code":"return x"
+}
+output = latexify.get_latex_with_code(name = code["name"], args = code["args"], code = code["code"]
+print(output)
+```
+stdout:  
+f(x) = x
+
+- 为什么不直接贡献给latexify？
+   - 答：作者代码写的不好，等到后期完善后再贡献也不迟
+
+# latexify原说明
 
 [![Python](https://img.shields.io/pypi/pyversions/latexify-py.svg)](https://pypi.org/project/latexify-py/)
 [![PyPI Latest Release](https://img.shields.io/pypi/v/latexify-py.svg)](https://pypi.org/project/latexify-py/)
