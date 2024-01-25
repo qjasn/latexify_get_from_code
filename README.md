@@ -10,7 +10,7 @@ code = {
    "args":"x",
    "code":"return x"
 }
-output = latexify.get_latex_with_code(name = code["name"], args = code["args"], code = code["code"]
+output = latexify.get_latex_with_code(name = code["name"], args = code["args"], code = code["code"])
 print(output)
 ```
 stdout:  
