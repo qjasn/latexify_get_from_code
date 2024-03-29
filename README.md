@@ -1,8 +1,8 @@
-# Fork说明
+# Fork description
 
-此项目新增了一个函数，用来直接从代码文本生成latex，此外还将扩展出支持输入python表达式返回latex的功能
+this repo add a new function for latexify to get latex from a plain text
 
-例：
+e.g.：
 ``` python
 import latexify
 code = {
@@ -16,8 +16,8 @@ print(output)
 stdout:  
 f(x) = x
 
-- 为什么不直接贡献给latexify？
-   - 答：作者代码写的不好，等到后期完善后再贡献也不迟
+- Why not contribute to latexify？
+   - In fact, Sympy have the same feature(sympy.latex), so it's not necessary for official latexify have this feature.
 
 # latexify原说明
 
